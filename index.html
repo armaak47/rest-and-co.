@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roast & Co. — Artisan Coffee</title>
+  <meta name="description" content="Roast & Co. — artisan coffee, fresh pastries and good company.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#home" class="logo">Roast<span>&</span>Co.</a>
+    <div class="nav-menu" id="nav-menu">
+      <a href="#home" class="nav-link">Home</a><a href="#about" class="nav-link">About</a><a href="#menu" class="nav-link">Menu</a><a href="#gallery" class="nav-link">Gallery</a><a href="#reviews" class="nav-link">Reviews</a>
+      <button class="nav-close" id="nav-close" aria-label="Close menu">×</button>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">☾</button>
+      <button class="cart-btn" id="cart-open" aria-label="Open shopping cart">🛒<span class="cart-count" id="cart-count">0</span></button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero section" id="home">
+  <div class="hero-bg"></div>
+  <div class="container hero-container"><div class="hero-content">
+    <span class="eyebrow">EST. 2018 · LAHORE</span>
+    <h1>Coffee made <em>with purpose.</em></h1>
+    <p>Small-batch roasted coffee, fresh pastries and a warm place to slow down for a while.</p>
+    <div class="hero-buttons"><a href="#menu" class="btn btn-primary">Explore Menu</a><a href="#about" class="btn btn-outline">Our Story</a></div>
+    <div class="hero-stats"><div><strong>4.9</strong><span>Customer rating</span></div><div><strong>25+</strong><span>Coffee varieties</span></div><div><strong>7</strong><span>Days a week</span></div></div>
+  </div></div>
+</section>
+
+<section class="section about" id="about"><div class="container about-grid">
+  <div class="about-image"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=85" alt="Roast and Co. coffee shop" loading="lazy"><div class="floating-card"><span>☕</span><div><strong>Freshly roasted</strong><small>Every week</small></div></div></div>
+  <div class="about-content"><span class="eyebrow">OUR STORY</span><h2>Good coffee.<br><em>Good people.</em></h2><p>Roast & Co. started with a simple idea: great coffee shouldn't feel complicated.</p><p>We work with carefully selected beans, roast in small batches, and serve every cup with attention to detail.</p>
+  <div class="about-features"><div><span>01</span><strong>Small batch</strong><p>Roasted fresh every week.</p></div><div><span>02</span><strong>Quality first</strong><p>Only carefully selected beans.</p></div><div><span>03</span><strong>Made fresh</strong><p>Pastries baked every morning.</p></div></div></div>
+</div></section>
+
+<section class="section menu-section" id="menu"><div class="container">
+  <div class="section-heading"><div><span class="eyebrow">WHAT WE SERVE</span><h2>Our <em>menu.</em></h2></div><p>From your first morning coffee to an afternoon treat.</p></div>
+  <div class="menu-filters"><button class="filter active" data-category="all">All</button><button class="filter" data-category="coffee">Coffee</button><button class="filter" data-category="cold">Cold Drinks</button><button class="filter" data-category="food">Food</button><button class="filter" data-category="dessert">Desserts</button></div>
+  <div class="products" id="products">
+    <article class="product-card" data-category="coffee" data-name="Cappuccino" data-price="650" data-image="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=800&q=80"><div class="product-image"><img src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=800&q=80" alt="Cappuccino" loading="lazy"><span class="product-tag">POPULAR</span></div><div class="product-info"><div class="product-top"><h3>Cappuccino</h3><span>PKR 650</span></div><p>Double espresso, steamed milk and silky foam.</p><button class="add-btn">Add to order <span>+</span></button></div></article>
+    <article class="product-card" data-category="coffee" data-name="Spanish Latte" data-price="750" data-image="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80"><div class="product-image"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80" alt="Spanish Latte" loading="lazy"></div><div class="product-info"><div class="product-top"><h3>Spanish Latte</h3><span>PKR 750</span></div><p>Espresso, steamed milk and sweet condensed milk.</p><button class="add-btn">Add to order <span>+</span></button></div></article>
+    <article class="product-card" data-category="coffee" data-name="Americano" data-price="500" data-image="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"><div class="product-image"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80" alt="Americano" loading="lazy"></div><div class="product-info"><div class="product-top"><h3>Americano</h3><span>PKR 500</span></div><p>Rich espresso finished with hot water.</p><button class="add-btn">Add to order <span>+</span></button></div></article>
+    <article class="product-card" data-category="cold" data-name="Iced Latte" data-price="700" data-image="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"><div class="product-image"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" alt="Iced latte" loading="lazy"><span class="product-tag">COLD</span></div><div class="product-info"><div class="product-top"><h3>Iced Latte</h3><span>PKR 700</span></div><p>Chilled espresso, milk and plenty of ice.</p><button class="add-btn">Add to order <span>+</span></button></div></article>
+    <article class="product-card" data-category="food" data-name="Avocado Toast" data-price="950" data-image="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=800&q=80"><div class="product-image"><img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=800&q=80" alt="Avocado toast" loading="lazy"></div><div class="product-info"><div class="product-top"><h3>Avocado Toast</h3><span>PKR 950</span></div><p>Sourdough, avocado, herbs and poached egg.</p><button class="add-btn">Add to order <span>+</span></button></div></article>
+    <article class="product-card" data-category="dessert" data-name="Chocolate Cake" data-price="600" data-image="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"><div class="product-image"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Chocolate cake" loading="lazy"></div><div class="product-info"><div class="product-top"><h3>Chocolate Cake</h3><span>PKR 600</span></div><p>Dark chocolate cake with smooth chocolate ganache.</p><button class="add-btn">Add to order <span>+</span></button></div></article>
+  </div>
+</div></section>
+
+<section class="section gallery-section" id="gallery"><div class="container"><div class="section-heading"><div><span class="eyebrow">A LOOK INSIDE</span><h2>The <em>space.</em></h2></div><p>Come for the coffee. Stay for the atmosphere.</p></div>
+<div class="gallery">
+<button class="gallery-item large"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=85" alt="Cafe interior" loading="lazy"></button>
+<button class="gallery-item"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=85" alt="Coffee beans" loading="lazy"></button>
+<button class="gallery-item"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=85" alt="Coffee being prepared" loading="lazy"></button>
+<button class="gallery-item"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=85" alt="Cafe seating" loading="lazy"></button>
+<button class="gallery-item"><img src="https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=800&q=85" alt="Coffee and dessert" loading="lazy"></button>
+</div></div></section>
+
+<section class="section hours-section"><div class="container hours-container"><div><span class="eyebrow">COME SAY HELLO</span><h2>We're open <em>every day.</em></h2><p>Whether it's an early morning espresso or a late afternoon catch-up, there's always a seat waiting for you.</p></div><div class="hours-card"><div><span>Monday — Thursday</span><strong>8:00 AM — 11:00 PM</strong></div><div><span>Friday — Saturday</span><strong>8:00 AM — 12:00 AM</strong></div><div><span>Sunday</span><strong>9:00 AM — 10:00 PM</strong></div></div></div></section>
+
+<section class="section reviews-section" id="reviews"><div class="container"><div class="section-heading centered"><div><span class="eyebrow">WHAT PEOPLE SAY</span><h2>Loved by <em>locals.</em></h2></div></div><div class="review-slider"><button class="slider-btn prev" id="review-prev">←</button><div class="review-content" id="review-content"></div><button class="slider-btn next" id="review-next">→</button></div></div></section>
+
+<section class="section faq-section"><div class="container faq-container"><div><span class="eyebrow">QUESTIONS</span><h2>Frequently <em>asked.</em></h2></div><div class="faq-list">
+<div class="faq-item"><button class="faq-question">Do you offer takeaway?<span>+</span></button><div class="faq-answer"><p>Yes. Everything on our menu can be prepared for takeaway.</p></div></div>
+<div class="faq-item"><button class="faq-question">Do you have Wi-Fi?<span>+</span></button><div class="faq-answer"><p>Yes. Complimentary Wi-Fi is available throughout the café.</p></div></div>
+<div class="faq-item"><button class="faq-question">Do you accept reservations?<span>+</span></button><div class="faq-answer"><p>For larger groups, reservations can be arranged in advance.</p></div></div>
+<div class="faq-item"><button class="faq-question">Do you have vegetarian options?<span>+</span></button><div class="faq-answer"><p>Yes. Several vegetarian options are available on our menu.</p></div></div>
+</div></div></section>
+</main>
+
+<footer class="footer"><div class="container footer-grid">
+<div><a href="#home" class="logo footer-logo">Roast<span>&</span>Co.</a><p>Artisan coffee, fresh food and good company.</p></div>
+<div><h4>Explore</h4><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a></div>
+<div><h4>Visit</h4><p>MM Alam Road</p><p>Lahore, Pakistan</p></div>
+</div><div class="footer-bottom"><p>© 2026 Roast & Co. All rights reserved.</p><span>Demo website · No real orders processed</span></div></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart" id="cart"><div class="cart-header"><div><span class="eyebrow">YOUR ORDER</span><h2>Your cart</h2></div><button id="cart-close" class="close-btn">×</button></div>
+<div class="cart-items" id="cart-items"><div class="empty-cart"><div>🛒</div><h3>Your cart is empty</h3><p>Add something delicious from the menu.</p></div></div>
+<div class="cart-footer"><div class="cart-total"><span>Total</span><strong id="cart-total">PKR 0</strong></div><button class="btn btn-primary checkout-btn" id="checkout">Checkout</button><small>Demo only — no real payment is processed.</small></div></aside>
+
+<div class="modal" id="checkout-modal"><div class="modal-box"><button class="modal-close" id="checkout-close">×</button><span class="eyebrow">DEMO CHECKOUT</span><h2>Order <em>summary.</em></h2><div id="checkout-summary"></div><div class="checkout-total"><span>Total</span><strong id="checkout-total">PKR 0</strong></div><button class="btn btn-primary" id="place-order">Place Demo Order</button><p class="demo-note">This is a demonstration website. No real order will be placed.</p></div></div>
+
+<div class="lightbox" id="lightbox"><button class="lightbox-close" id="lightbox-close">×</button><img id="lightbox-image" src="" alt=""></div>
+<button class="back-top" id="back-top" aria-label="Back to top">↑</button>
+<script src="script.js"></script>
+</body>
+</html>
